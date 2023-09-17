@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Nunito', sans-serif;
+}
+.opening{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+.opening_video{
+    position: fixed;
+    z-index: 0;
+}
+.opening_overlay{
+    width: 100%;
+    height: 104vh;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.7203256302521008) 43%, rgb(255, 207, 237) 71%);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@keyframes rotate {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    25%,45% {
+      transform: translateY(-75px);
+    }
+    50%,70% {
+      transform: translateY(-150px);
+    }
+    75%,95% {
+      transform: translateY(-230px);
+    }
+    100% {
+      transform: translateY(-305px);
+    }
+  }
+.frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: -40%;
+    margin-top: -37.5px;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 75px;
+    height: 75px;
+  }
+    .pre {
+      position: absolute;
+      top: 0;
+      right: 55%;
+      height: 75px;
+      text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+    
+    .change_outer {
+      position: absolute;
+      top: 0;
+      left: 46%;
+      text-align: left;
+      height: 75px;
+      overflow: hidden;
+    }
+    .change_inner {
+        position: relative;
+        animation: rotate 12s ease-in-out infinite;
+      }
+      
+      .element {
+        display: block;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px #000000;
+      }
+.opening_menu{
+    position: fixed;
+    width: 100%;
+}
+.opening_menu ul{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    font-size: 20px;
+}
+.opening_menu ul li{
+    margin: 20px 40px;
+}
+.opening_content{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.about_me{
+    background-color: black;
+    color: #fff;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
