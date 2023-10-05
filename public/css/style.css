@@ -164,7 +164,7 @@ p, span{
 .main-container::before{
   content: "";
   display: block;
-  background-image: url(./resources/logo.png);
+  background-image: url(/images/logo.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed;
@@ -221,7 +221,7 @@ p, span{
 
 .services{
   text-align: center;
-  background-image: url(./resources/services.jpg);
+  background-image: url(/images/services.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed;
