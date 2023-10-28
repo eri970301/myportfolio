@@ -250,8 +250,31 @@ p, span{
   border-radius: 10px;
 }
 
-.carousel_icons .skills_barra span{
-  width: 10px;
-  height: 2px;
-  background-color: #fff;
+.carousel_icons {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffffa9;
+  padding: 30px 0px;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel_icon {
+  flex: 0 0 100px;
+  margin: 0px 30px;
+  box-sizing: border-box;
+}
+
+.carousel_icon img{
+  max-width: 100%;
+  height: auto;
+}
+
+#prevButton, #nextButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
